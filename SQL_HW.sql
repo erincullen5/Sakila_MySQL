@@ -54,6 +54,9 @@ SET first_name = "HARPO"
 WHERE actor_id = 172;
 
 -- 4d. Perhaps we were too hasty in changing `GROUCHO` to `HARPO`. It turns out that `GROUCHO` was the correct name after all! In a single query, if the first name of the actor is currently `HARPO`, change it to `GROUCHO`. Otherwise, change the first name to `MUCHO GROUCHO`. BE CAREFUL NOT TO CHANGE THE FIRST NAME OF EVERY ACTOR TO `MUCHO GROUCHO`, HOWEVER! (Hint: update the record using a unique identifier.)
+UPDATE actor 
+SET first_name = "GROUCO"
+WHERE first_name = "HARPO" ;
 
 -- 5a. You cannot locate the schema of the `address` table. Which query would you use to re-create it?
 SHOW CREATE TABLE address;
